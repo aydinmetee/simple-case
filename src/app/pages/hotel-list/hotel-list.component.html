@@ -1,0 +1,40 @@
+<div class="main-header">
+  <button
+    pButton
+    type="button"
+    icon="pi pi-plus"
+    class="p-button-outlined"
+  ></button>
+  <h1 class="header-title">Otel Ekle</h1>
+</div>
+<div class="sort-area">
+  <p-dropdown [options]="sortList" [(ngModel)]="sortDef"></p-dropdown>
+</div>
+<div class="grid mt-0">
+  <div class="col-12 md:col-6 lg:col-3">
+    <div class="card">
+      <img
+        src="../../../assets/img/sample.jpg"
+        class="card-img-top regions-img"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Voyage Hotel</h5>
+        <div class="card-points-area">8.7 Puan</div>
+        <div class="action-buttons">
+          <button
+            pButton
+            type="button"
+            label="Puan Arttır"
+            class="p-button-sm"
+          ></button>
+          <button
+            pButton
+            type="button"
+            label="Puan Azalt"
+            class="p-button-sm"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
