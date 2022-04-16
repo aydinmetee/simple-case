@@ -1,0 +1,36 @@
+<div class="def-form" [formGroup]="form">
+  <div class="field">
+    <label for="hotel" class="block">Otel Adı</label>
+    <input
+      id="hotel"
+      type="text"
+      class="w-100"
+      formControlName="name"
+      aria-describedby="hotel-help"
+      pInputText
+    />
+  </div>
+  <div class="action-buttons">
+    <button
+      *ngIf="isCreated"
+      pButton
+      pRipple
+      type="button"
+      icon="pi pi-arrow-left"
+      label="Geri Dön"
+      class="mr-1"
+      [routerLink]="'/pages/hotel-list'"
+    ></button>
+    <button
+      pButton
+      pRipple
+      type="button"
+      [icon]="isCreated ? 'pi pi-check' : null"
+      [label]="isCreated ? 'Eklendi' : 'Ekle'"
+      [ngClass]="[
+        isCreated ? 'p-button-raised p-button-success' : 'p-button-raised'
+      ]"
+      (click)="isCreated ? null : createHotel()"
+    ></button>
+  </div>
+</div>

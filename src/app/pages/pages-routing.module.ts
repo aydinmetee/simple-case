@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HotelListComponent } from './hotel-list/hotel-list.component';
+import { HotelDefComponent } from './components/hotel-def/hotel-def.component';
+import { HotelListComponent } from './components/hotel-list/hotel-list.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'hotel-list',
     component: HotelListComponent,
+  },
+  {
+    path: 'hotel-def',
+    component: HotelDefComponent,
   },
 ];
 

@@ -1,0 +1,144 @@
+.main-header {
+  position: relative;
+}
+.header-title {
+  font-weight: 500;
+  display: inline;
+  padding-left: 0.5em;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1f2126;
+}
+.sort-area {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+.card {
+  height: 8rem;
+  letter-spacing: 0.2px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.375rem;
+  width: 100%;
+  margin-right: 0px;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.regions-img {
+  width: 40%;
+  height: 100%;
+  max-height: 200px;
+  padding: 0.5rem;
+}
+
+.card-body {
+  padding: 0.5em;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+}
+
+.card-title {
+  margin: 0px 5px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #1f2126;
+}
+
+.card-points-area {
+  background-color: rgba(232, 228, 228, 0.812);
+  color: green;
+}
+
+.action-buttons {
+  font-size: small;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.ui-button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.2rem;
+  padding: 0.5rem 1.2rem;
+}
+
+.hotel-points {
+  height: auto;
+  border-radius: 6px;
+  background-color: #f6f9fd;
+  float: left;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 3px;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.hotel-points span {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.27px;
+  text-align: right;
+  float: inherit;
+  color: #0dc5bb;
+  padding-bottom: 5px;
+}
+
+.paginator {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.delete-button {
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3px 4px 4px;
+  border-radius: 4px;
+  font-size: 13px;
+  float: left;
+  padding: 0rem;
+  position: absolute;
+  z-index: 1;
+  margin-top: -1rem;
+  display: none;
+}
+
+.del-button {
+  float: right;
+}
+
+.main-div:hover .delete-button {
+  display: block;
+}
